@@ -51,7 +51,14 @@ namespace VSTS.Reporting.Providers.VstsRestProvider
 
         private string GetContinuationToken()
         {
-            return (string)config["continuationToken"];
+            if (config.ContainsKey("continuationToken"))
+            {
+                return (string)config["continuationToken"];
+            }
+            else
+            {
+                return null;
+            }
         }
 
         private void SaveContinuationToken(string continuationToken)
