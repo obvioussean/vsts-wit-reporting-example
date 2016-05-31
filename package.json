@@ -1,0 +1,13 @@
+{
+    "name": "vsts-wit-reporting-example",
+    "description": "Example program for extracting work items using the REST Reporting APIs and inserting them into a SQLite database.",
+    "scripts": {
+        "configure": "node configure.js",
+        "export": "node export.js"
+    },
+    "dependencies": {
+        "sqlite3": "*",
+        "commander": "*",
+        "edge": "*"
+    }
+}
