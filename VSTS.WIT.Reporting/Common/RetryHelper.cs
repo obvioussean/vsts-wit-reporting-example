@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace VSTS.Reporting.Common
+namespace VSTS.WIT.Reporting.Common
 {
     public static class RetryHelper
     {

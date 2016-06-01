@@ -3,17 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTS.Reporting.Providers", "VSTS.Reporting.Providers\VSTS.Reporting.Providers.csproj", "{5ACBD15D-9185-47F3-9A41-ACF3441BF180}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTS.Reporting.Providers.JsonFileProvider", "VSTS.Reporting.Providers.JsonFileProvider\VSTS.Reporting.Providers.JsonFileProvider.csproj", "{7322A6C1-EA35-47F0-94EE-221FF875D73D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTS.Reporting.Providers.VstsRestProvider", "VSTS.Reporting.Providers.VstsRestProvider\VSTS.Reporting.Providers.VstsRestProvider.csproj", "{A1AC5E71-74B6-4A9F-9924-98ADDEEB1224}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTS.Reporting.Common", "VSTS.Reporting.Common\VSTS.Reporting.Common.csproj", "{CDE64F41-5F0D-47C1-B8BA-779DC947B970}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTS.Reporting.Providers.SQLiteProvider", "VSTS.Reporting.Providers.SQLiteProvider\VSTS.Reporting.Providers.SQLiteProvider.csproj", "{72596EFF-2A8B-46F3-8FDA-F68DC513A5F2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTS.Reporting.Runtime", "VSTS.Reporting.Runtime\VSTS.Reporting.Runtime.csproj", "{1588BC4A-EAB1-47D3-9677-8BA189892DF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTS.WIT.Reporting", "VSTS.WIT.Reporting\VSTS.WIT.Reporting.csproj", "{1588BC4A-EAB1-47D3-9677-8BA189892DF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,26 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5ACBD15D-9185-47F3-9A41-ACF3441BF180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5ACBD15D-9185-47F3-9A41-ACF3441BF180}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5ACBD15D-9185-47F3-9A41-ACF3441BF180}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5ACBD15D-9185-47F3-9A41-ACF3441BF180}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7322A6C1-EA35-47F0-94EE-221FF875D73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7322A6C1-EA35-47F0-94EE-221FF875D73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7322A6C1-EA35-47F0-94EE-221FF875D73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7322A6C1-EA35-47F0-94EE-221FF875D73D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1AC5E71-74B6-4A9F-9924-98ADDEEB1224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1AC5E71-74B6-4A9F-9924-98ADDEEB1224}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1AC5E71-74B6-4A9F-9924-98ADDEEB1224}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1AC5E71-74B6-4A9F-9924-98ADDEEB1224}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CDE64F41-5F0D-47C1-B8BA-779DC947B970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDE64F41-5F0D-47C1-B8BA-779DC947B970}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDE64F41-5F0D-47C1-B8BA-779DC947B970}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDE64F41-5F0D-47C1-B8BA-779DC947B970}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72596EFF-2A8B-46F3-8FDA-F68DC513A5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72596EFF-2A8B-46F3-8FDA-F68DC513A5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72596EFF-2A8B-46F3-8FDA-F68DC513A5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72596EFF-2A8B-46F3-8FDA-F68DC513A5F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1588BC4A-EAB1-47D3-9677-8BA189892DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1588BC4A-EAB1-47D3-9677-8BA189892DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1588BC4A-EAB1-47D3-9677-8BA189892DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU

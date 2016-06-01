@@ -4,20 +4,18 @@ using System.IO;
 using System.Threading.Tasks;
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
 using Newtonsoft.Json;
-using VSTS.Reporting.Common;
 
-namespace VSTS.Reporting.Providers.JsonFileProvider
+namespace VSTS.WIT.Reporting.Providers.JsonFile
 {
     public class JsonFileSourceProvider : ISourceProvider
     {
-        private Configuration configuration;
         private string path;
         private IEnumerator<string> filesEnumerator;
         private bool hasMoreWorkItems = true;
 
-        public JsonFileSourceProvider(Configuration config)
+        public JsonFileSourceProvider(JsonFileSourceProviderOptions providerOptions)
         {
-            this.path = (string)config["jsonPath"];
+            this.path = providerOptions.Path;
         }
 
         public async Task<IEnumerable<WorkItem>> GetWorkItems()

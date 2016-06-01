@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VSTS.Reporting.Providers.JsonFileProvider")]
+[assembly: AssemblyTitle("VSTS.WIT.Reporting")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("VSTS.Reporting.Providers.JsonFileProvider")]
+[assembly: AssemblyProduct("VSTS.WIT.Reporting")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7322a6c1-ea35-47f0-94ee-221ff875d73d")]
+[assembly: Guid("1588bc4a-eab1-47d3-9677-8ba189892df8")]
 
 // Version information for an assembly consists of the following four values:
 //

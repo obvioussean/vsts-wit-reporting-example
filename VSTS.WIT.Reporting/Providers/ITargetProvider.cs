@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
 
-namespace VSTS.Reporting.Providers
+namespace VSTS.WIT.Reporting.Providers
 {
     public interface ITargetProvider
     {

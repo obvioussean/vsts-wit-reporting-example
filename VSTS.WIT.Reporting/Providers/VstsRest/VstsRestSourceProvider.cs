@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi;
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
 using Microsoft.VisualStudio.Services.Common;
-using VSTS.Reporting.Common;
+using VSTS.WIT.Reporting.Common;
 
-namespace VSTS.Reporting.Providers.VstsRestProvider
+namespace VSTS.WIT.Reporting.Providers.VstsRest
 {
     public class VstsRestSourceProvider : ISourceProvider
     {
@@ -18,11 +18,11 @@ namespace VSTS.Reporting.Providers.VstsRestProvider
         private ReportingWorkItemRevisionsFilter filter;
         private bool hasMoreWorkItems;
 
-        public VstsRestSourceProvider(Configuration config)
+        public VstsRestSourceProvider(VstsRestSourceProviderOptions providerOptions)
         {
-            this.config = config;
-            this.host = new Uri((string)config["account"]);
-            this.credentials = new VssBasicCredential((string)config["username"], (string)config["personalAccessToken"]);
+            this.config = new Configuration(@"vstsrest.json");
+            this.host = new Uri(providerOptions.Account);
+            this.credentials = new VssBasicCredential(providerOptions.Username, providerOptions.PersonalAccessToken);
             this.client = new WorkItemTrackingHttpClient(host, credentials);
         }
 

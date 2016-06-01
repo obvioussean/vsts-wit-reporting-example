@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using Newtonsoft.Json;
 
-namespace VSTS.Reporting.Common
+namespace VSTS.WIT.Reporting.Common
 {
     public class Configuration : Dictionary<string, object>
     {
@@ -16,7 +15,7 @@ namespace VSTS.Reporting.Common
 
         public void Save()
         {
-            var json = JsonConvert.SerializeObject(this);
+            var json = JsonConvert.SerializeObject(this, Formatting.Indented);
             using (var streamWriter = new StreamWriter(path))
             {
                 streamWriter.Write(json);
@@ -25,10 +24,19 @@ namespace VSTS.Reporting.Common
 
         private static Dictionary<string, object> Deserialize(string path)
         {
-            using (var streamReader = new StreamReader(path))
+            if (File.Exists(path))
             {
-                var json = streamReader.ReadToEnd();
-                return JsonConvert.DeserializeObject<Dictionary<string, object>>(json);
+                using (var streamReader = new StreamReader(path))
+                {
+                    var json = streamReader.ReadToEnd();
+                    return JsonConvert.DeserializeObject<Dictionary<string, object>>(json);
+                }
+            }
+            else
+            {
+                File.CreateText(path);
+
+                return new Dictionary<string, object>();
             }
         }
     }

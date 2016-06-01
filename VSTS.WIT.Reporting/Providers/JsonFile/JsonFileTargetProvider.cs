@@ -3,17 +3,16 @@ using System.IO;
 using System.Threading.Tasks;
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
 using Newtonsoft.Json;
-using VSTS.Reporting.Common;
 
-namespace VSTS.Reporting.Providers.JsonFileProvider
+namespace VSTS.WIT.Reporting.Providers.JsonFile
 {
     public class JsonFileTargetProvider : ITargetProvider
     {
         private string path;
 
-        public JsonFileTargetProvider(Configuration config)
+        public JsonFileTargetProvider(JsonFileTargetProviderOptions options)
         {
-            this.path = (string)config["jsonPath"];
+            this.path = options.Path;
             Directory.CreateDirectory(this.path);
         }
 
